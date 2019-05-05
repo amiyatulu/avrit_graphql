@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'corsheaders',
     'review',
+    
 ]
 
 MIDDLEWARE = [
@@ -123,8 +124,17 @@ USE_TZ = True
 
 
 GRAPHENE = {
-    'SCHEMA': 'sakhura_backend.schema.schema',
+    'SCHEMA': 'avrit_backend.schema.schema',
+     'MIDDLEWARE': [
+        'graphql_jwt.middleware.JSONWebTokenMiddleware',
+    ],
 }
+
+AUTHENTICATION_BACKENDS = [
+    'graphql_jwt.backends.JSONWebTokenBackend',
+    'django.contrib.auth.backends.ModelBackend',
+]
+
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
 )

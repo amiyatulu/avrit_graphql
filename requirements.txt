@@ -1,6 +1,7 @@
 Django>=2.2.1
 django-cors-headers>=2.5.3
 django-filter>=2.1.0
+django-graphql-jwt>=0.2.1
 graphene-django>=2.2.0
 graphene-permissions>=1.1.2
 gunicorn>=19.9.0

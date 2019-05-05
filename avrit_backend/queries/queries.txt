@@ -1,0 +1,45 @@
+query {
+  allPost {
+    edges {
+      node {
+          id,
+        title,
+        typeOfSubmission,
+        courseName,
+        subject,
+        description
+      }
+    }
+  }
+}
+
+mutation {
+    createUser(name: "Probiquery", email: "probiquery@gmail.com", password: "@tulan123") {
+        user {
+            id
+            name
+            email
+        }
+    }
+}
+
+query {
+    users {
+        id
+        name
+        email
+    }
+}
+
+
+mutation{
+    tokenAuth(email:"email@gmail.com", password:"password") {
+        token
+    }
+}
+
+mutation{
+    verifyToken(token:"eyJ0eXAiOiJKV1QUkerisDEeiOiJIUzI1NiJ9.eydfbWFpbCI6ImFtaXlhdHVsdUBnbWFpbC5jb20iLCJleHAiOjE1NTcwNTM0NTQsIm9yaWdJYXQiOjE1NTcwNTMxNTR9.KXWxlCtGYggdkjfeiikHPdl9LxT9FMNlGzLBRQi7wmYxg") {
+        payload
+    }
+}
