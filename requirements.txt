@@ -1,0 +1,8 @@
+Django>=2.2.1
+django-cors-headers>=2.5.3
+django-filter>=2.1.0
+graphene-django>=2.2.0
+graphene-permissions>=1.1.2
+gunicorn>=19.9.0
+Pillow>=6.0.0
+pylint>=2.3.1

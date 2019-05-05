@@ -1,0 +1,5 @@
+env/
+*.pyc
+avrit_backend/avrit_backend/__pycache__
+avrit_backend/review/migrations/
+avrit_backend/review/__pycache__
