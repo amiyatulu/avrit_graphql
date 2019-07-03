@@ -1,11 +1,11 @@
 import graphene
 import review.schema
-import users.schema
+import profiles_api.schema
 
-class Query(users.schema.Query, review.schema.QueryPost, graphene.ObjectType):
+class Query(profiles_api.schema.Query, review.schema.QueryPost, graphene.ObjectType):
     pass
 
-class Mutation(users.schema.Mutation, review.schema.MutationJWT, graphene.ObjectType,):
+class Mutation(profiles_api.schema.Mutation, graphene.ObjectType):
     pass
 
 schema = graphene.Schema(query=Query, mutation=Mutation)

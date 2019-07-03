@@ -1,6 +1,8 @@
 env/
 *.pyc
 avrit_backend/avrit_backend/__pycache__
-avrit_backend/review/migrations/
 avrit_backend/review/__pycache__/
+avrit_backend/review/migrations/
+avrit_backend/profiles_api/__pycache__/
+avrit_backend/profiles_api/migrations/
 db.sqlite3
